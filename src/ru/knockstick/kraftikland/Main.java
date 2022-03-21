@@ -1,7 +1,7 @@
 package ru.knockstick.kraftikland;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bstats.bukkit.Metrics;
+import ru.knockstick.metrics.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Sound;
@@ -44,7 +44,8 @@ public class Main extends JavaPlugin implements Listener {
     
     public String prefix = this.getConfig().getString("plugin.prefix");
     
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public void onEnable() {
         this.plugin = this;
         this.saveDefaultConfig();
