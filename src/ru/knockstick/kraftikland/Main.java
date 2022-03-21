@@ -50,6 +50,8 @@ public class Main extends JavaPlugin implements Listener {
         this.plugin = this;
         this.saveDefaultConfig();
         this.getLogger().info("KraftikLand QuickGuide started!");
+        this.getLogger().info("The plugin is made by the FriendWorld Network administration with love <3");
+        this.getLogger().info("Our Contacts: https://github.com/FriendWorld-Network, Discord: https://discord.friendworld.ru/");
         this.getServer().getPluginManager().registerEvents(this, this);
         int pluginId = 14702;
         Metrics metrics = new Metrics(this, pluginId);
