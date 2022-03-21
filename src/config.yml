@@ -1,6 +1,14 @@
+###########################################
+#                                         #
+#             KLQuickGuide                #
+#                                         #
+###########################################
+
+# !!! DO NOT USE & / USE THIS CHARACTER: §!!! 
+
 plugin:
   enabled: true
-  prefix: '&8[&dQuick&5Guide&8] &f'
+  prefix: '§8[§dQuick§5Guide&8] §f'
   x1: 0.500
   y1: 65
   z1: -6.500
