@@ -1,6 +1,7 @@
 package ru.knockstick.kraftikland;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import ru.knockstick.metrics.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Sound;
@@ -43,12 +44,17 @@ public class Main extends JavaPlugin implements Listener {
     
     public String prefix = this.getConfig().getString("plugin.prefix");
     
-    @Override
+    @SuppressWarnings("unused")
+	@Override
     public void onEnable() {
         this.plugin = this;
         this.saveDefaultConfig();
         this.getLogger().info("KraftikLand QuickGuide started!");
+        this.getLogger().info("The plugin is made by the FriendWorld Network administration with love <3");
+        this.getLogger().info("Our Contacts: https://github.com/FriendWorld-Network, Discord: https://discord.friendworld.ru/");
         this.getServer().getPluginManager().registerEvents(this, this);
+        int pluginId = 14702;
+        Metrics metrics = new Metrics(this, pluginId);
     }
     
     @EventHandler
@@ -79,7 +85,10 @@ public class Main extends JavaPlugin implements Listener {
                 }
             }
         };
-        thread.start();
+        if (isEnabled == true) {
+        	thread.start();
+        }
+        
     }
 
 }
