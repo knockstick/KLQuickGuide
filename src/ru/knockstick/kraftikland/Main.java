@@ -3,6 +3,7 @@ package ru.knockstick.kraftikland;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Sound;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.EventHandler;
@@ -56,15 +57,19 @@ public class Main extends JavaPlugin implements Listener {
                 if(p.hasPlayedBefore() == false) {
                     try {
                         p.teleport(new Location(Bukkit.getWorld("world"), x1, y1, z1, yaw1, pitch1));
+                        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
                         p.sendMessage(msg1);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), x2, y2, z2, yaw2, pitch2));
+                        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
                         p.sendMessage(msg2);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), x3, y3, z3, yaw3, pitch3));
+                        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
                         p.sendMessage(msg3);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), xSpawn, ySpawn, zSpawn, yawSpawn, pitchSpawn));
+                        p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
                         p.sendMessage(endmsg);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
