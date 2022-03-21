@@ -79,7 +79,10 @@ public class Main extends JavaPlugin implements Listener {
                 }
             }
         };
-        thread.start();
+        if (isEnabled == true) {
+        	thread.start();
+        }
+        
     }
 
 }
