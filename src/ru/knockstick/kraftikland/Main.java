@@ -60,19 +60,19 @@ public class Main extends JavaPlugin implements Listener {
                     try {
                         p.teleport(new Location(Bukkit.getWorld("world"), x1, y1, z1, yaw1, pitch1));
                         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
-                        p.sendMessage(msg1);
+                        p.sendMessage(prefix + " " + msg1);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), x2, y2, z2, yaw2, pitch2));
                         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
-                        p.sendMessage(msg2);
+                        p.sendMessage(prefix + " " + msg2);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), x3, y3, z3, yaw3, pitch3));
                         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
-                        p.sendMessage(msg3);
+                        p.sendMessage(prefix + " " + msg3);
                         Thread.sleep(4000);
                         p.teleport(new Location(Bukkit.getWorld("world"), xSpawn, ySpawn, zSpawn, yawSpawn, pitchSpawn));
                         p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1, 0);
-                        p.sendMessage(endmsg);
+                        p.sendMessage(prefix + " " + endmsg);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
