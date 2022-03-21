@@ -4,39 +4,45 @@
 #                                         #
 ###########################################
 
-# !!! DO NOT USE & / USE THIS CHARACTER: §!!! 
+# !!! НЕ ИСПОЛЬЗУЙТЕ & / ИСПОЛЬЗУЙТЕ ЭТОТ СИМВОЛ: § !!!
+# !!! DO NOT USE & / USE THIS CHARACTER: § !!! 
+
+# !!! НЕ УДАЛЯЙТЕ 15 СТРОКУ!!!
+# !!! DO NOT DELETE LINE 15 !!!
 
 plugin:
-  enabled: true
+  # Вкл./Выкл. плагин / Turn plugin on/off
+  enabled: true 
   prefix: '§8[§dQuick§5Guide&8]'
-  x1: 0.500
-  y1: 65
-  z1: -6.500
-  yaw1: 180
-  pitch1: 0
+  # Координаты первой локации / First location coordinates
+  x1: 0
+  y1: 0
+  z1: 0
+  yaw1: 0.0
+  pitch1: 0.0
 
-# Координаты второй локации
-  x2: 5.500
-  y2: 65
-  z2: -8.500
-  yaw2: 90
-  pitch2: 0
+# Координаты второй локации / 2-nd location coordinates
+  x2: 0
+  y2: 0
+  z2: 0
+  yaw2: 0.0
+  pitch2: 0.0
 
-# Третьей локации
-  x3: 10
-  y3: 65
-  z3: -12.444
-  yaw3: 45
-  pitch3: 0
+# Третьей локации / Third location coordinates
+  x3: 0
+  y3: 0
+  z3: 0
+  yaw3: 0.0
+  pitch3: 0.0
 
-# Спавна
-  xSpawn: 25
-  ySpawn: 65
-  zSpawn: 15
-  yawSpawn: 100
-  pitchSpawn: 0
+# Спавна / Spawn coordinates
+  xSpawn: 0
+  ySpawn: 0
+  zSpawn: 0
+  yawSpawn: 0.0
+  pitchSpawn: 0.0
 
-# Сообщения при телепорте
+# Сообщения при телепорте / Messages when teleported
   msg1: 'Message1'
   msg2: 'Message2'
   msg3: 'Message3'
