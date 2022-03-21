@@ -41,6 +41,8 @@ public class Main extends JavaPlugin implements Listener {
     public String msg3 = this.getConfig().getString("plugin.msg3");
     public String endmsg = this.getConfig().getString("plugin.endmsg");
     
+    public String prefix = this.getConfig().getString("plugin.prefix");
+    
     @Override
     public void onEnable() {
         this.plugin = this;

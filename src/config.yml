@@ -1,5 +1,6 @@
 plugin:
   enabled: true
+  prefix: '&8[&dQuick&5Guide&8] &f'
   x1: 0.500
   y1: 65
   z1: -6.500
@@ -26,3 +27,9 @@ plugin:
   zSpawn: 15
   yawSpawn: 100
   pitchSpawn: 0
+
+# Сообщения при телепорте
+  msg1: 'Сообщение 1!'
+  msg2: 'Сообщение 2!'
+  msg3: 'Сообщение 3!'
+  endmsg: 'Пока!'
