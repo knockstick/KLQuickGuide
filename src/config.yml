@@ -1,0 +1,28 @@
+plugin:
+  enabled: true
+  x1: 0.500
+  y1: 65
+  z1: -6.500
+  yaw1: 180
+  pitch1: 0
+
+# Координаты второй локации
+  x2: 5.500
+  y2: 65
+  z2: -8.500
+  yaw2: 90
+  pitch2: 0
+
+# Третьей локации
+  x3: 10
+  y3: 65
+  z3: -12.444
+  yaw3: 45
+  pitch3: 0
+
+# Спавна
+  xSpawn: 25
+  ySpawn: 65
+  zSpawn: 15
+  yawSpawn: 100
+  pitchSpawn: 0

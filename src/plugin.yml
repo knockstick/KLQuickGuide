@@ -1,0 +1,7 @@
+name: KraftikLandQuickGuide
+version: 1.0.0BETA
+main: ru.knockstick.kraftikland.Main
+commands:
+  guide:
+    description: Start QuickGuide
+    usage: /guide
