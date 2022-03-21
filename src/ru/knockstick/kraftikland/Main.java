@@ -1,6 +1,7 @@
 package ru.knockstick.kraftikland;
 
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Sound;
@@ -49,6 +50,8 @@ public class Main extends JavaPlugin implements Listener {
         this.saveDefaultConfig();
         this.getLogger().info("KraftikLand QuickGuide started!");
         this.getServer().getPluginManager().registerEvents(this, this);
+        int pluginId = 14702;
+        Metrics metrics = new Metrics(this, pluginId);
     }
     
     @EventHandler
